@@ -19,10 +19,12 @@ body {
 
 h1 {
     font-size: $mobile-big-heading-size;
+    font-family: $raleway;
 }
 
 h2 {
     font-size: $mobile-medium-heading-size;
+    font-family: $raleway;
 }
 
 p {
@@ -51,4 +53,11 @@ input:focus,
 textarea:focus,
 select:focus {
     outline: none;
+}
+
+/** LAYOUTS **/
+
+header, section, footer {
+    max-width: 900px;
+    margin: 0 auto;
 }

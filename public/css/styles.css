@@ -38,15 +38,17 @@ body {
 }
 
 h1 {
-  font-size: clamp(1.714rem, 6.4vw, 2rem);
+  font-size: clamp(1.714rem, 6.4vw, 3rem);
+  font-family: "Raleway", sans-serif;
 }
 
 h2 {
-  font-size: clamp(1.259rem, 4.7vw, 1.428rem);
+  font-size: clamp(1.259rem, 4.7vw, 1.857rem);
+  font-family: "Raleway", sans-serif;
 }
 
 p {
-  font-size: clamp(0.964rem, 3.7vw, 1.05rem);
+  font-size: clamp(0.964rem, 3.7vw, 1.285rem);
 }
 
 img {
@@ -71,6 +73,12 @@ input:focus,
 textarea:focus,
 select:focus {
   outline: none;
+}
+
+/** LAYOUTS **/
+header, section, footer {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .fylo-header {
@@ -114,7 +122,7 @@ select:focus {
 .hero {
   position: relative;
   background-color: #1c2431;
-  padding: 8vw clamp(31.9px, 8.5vw, 56.716px);
+  padding: clamp(2.144rem, 8vw, 3.812rem) clamp(31.9px, 8.5vw, 56.716px);
   text-align: center;
   margin-bottom: 7.5rem;
 }
@@ -127,6 +135,7 @@ select:focus {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   height: 68vw;
+  max-height: 300px;
   width: 100%;
 }
 
@@ -151,7 +160,6 @@ select:focus {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
 }
 
 .hero__title {
@@ -171,7 +179,7 @@ select:focus {
   border-radius: 30px;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
-  font-size: clamp(0.964rem, 3.7vw, 1.05rem);
+  font-size: clamp(0.964rem, 3.7vw, 1.285rem);
   color: white;
   background: #020024;
   background: linear-gradient(50deg, #65e2d9, #339ecc);
@@ -215,7 +223,7 @@ select:focus {
 }
 
 .productive > h1 {
-  font-size: clamp(1.259rem, 4.7vw, 1.428rem);
+  font-size: clamp(1.259rem, 4.7vw, 1.857rem);
   margin-bottom: 1em;
 }
 
@@ -252,7 +260,7 @@ select:focus {
 }
 
 .testimonials__testimonial > p {
-  font-size: 2.8vw;
+  font-size: clamp(0.75rem, 2.8vw, 1.142rem);
   line-height: 1.8em;
   margin-bottom: 1.399em;
 }
@@ -311,7 +319,8 @@ select:focus {
 }
 
 .access > p:first-child {
-  font-size: clamp(1.259rem, 4.7vw, 1.428rem);
+  font-size: clamp(1.259rem, 4.7vw, 1.857rem);
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
 
@@ -332,7 +341,7 @@ select:focus {
 }
 
 .access > div input {
-  font-size: clamp(0.964rem, 3.7vw, 1.05rem);
+  font-size: clamp(0.964rem, 3.7vw, 1.285rem);
   border: 0px solid transparent;
   border-radius: 30px;
   padding: 1.14em 1.08em;
@@ -340,7 +349,7 @@ select:focus {
 }
 
 .access > div button {
-  font-size: clamp(0.964rem, 3.7vw, 1.05rem);
+  font-size: clamp(0.964rem, 3.7vw, 1.285rem);
   border: 0px solid transparent;
   background: #020024;
   background: -webkit-gradient(linear, left top, right top, from(#65e2d9), color-stop(55%), to(#339ecc));

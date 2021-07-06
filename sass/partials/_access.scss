@@ -12,6 +12,7 @@
 
     &>p:first-child {
         font-size: $mobile-medium-heading-size;
+        font-family: $raleway;
         font-weight: 700;
     }
 
@@ -42,9 +43,5 @@
         color: $white;
         border-radius: 30px;
         padding: 1.14em 1.08em;
-    }
-
-    &>div button:first-child {
-        
     }
 }
