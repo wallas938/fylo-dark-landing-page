@@ -1,0 +1,19 @@
+@import "colors";
+
+/* Layout */
+$mobile-up: 375px;
+$desktop-up: 1440px;
+
+$mobile-down: 374px;
+$desktop-down: 1439px;
+
+// Padding
+$mobile-section-padding-top-bottom:  clamp(18.766px ,5vw, 33.366px);
+$mobile-section-padding-left-right:  clamp(31.9px ,8.5vw, 56.716px);
+
+// Headings
+$mobile-big-heading-size: clamp(1.714rem, 6.4vw, 2rem);
+$mobile-medium-heading-size: clamp(1.259rem, 4.7vw, 1.428rem);
+
+// Paragraph
+$mobile-text-size: clamp(0.964rem, 3.7vw, 1.05rem);

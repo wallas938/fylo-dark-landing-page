@@ -1,0 +1,61 @@
+.hero {
+    position: relative;
+    background-color: $dark-blue-intro-signup-bg;
+    padding: 8vw $mobile-section-padding-left-right;
+    text-align: center;
+    margin-bottom: 7.5rem;
+    &__bg-curvy {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        background-color: $dark-blue-main-bg;
+        transform: translateX(-50%);
+        height: 68vw;
+        width: 100%;
+        &::before {
+            content: url(../images/bg-curvy-mobile.svg);
+            position: absolute;
+            top: -50%;
+            z-index: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    
+
+    &__image,
+    &__title,
+    &__desc,
+    &__cta {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__image {
+        margin-bottom: clamp(2.278rem, 8.5vw, 2.28rem);
+    }
+
+    &__title {
+        line-height: 1.4em;
+        margin-bottom: .7em;
+        font-weight: 700;
+    }
+
+    &__desc {
+        line-height: 1.5em;
+        margin-bottom: 1.7em;
+        font-weight: 400;
+    }
+
+    &__cta button {
+        border: 1px solid transparent;
+        border-radius: 30px;
+        font-weight: 700;
+        font-family: $raleway;
+        font-size: $mobile-text-size;
+        color: white;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(50deg, $cyan, $blue);
+        padding: 1.1em 6em;
+    }
+}

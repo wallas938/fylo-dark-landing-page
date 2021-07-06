@@ -1,0 +1,26 @@
+.fylo-header {    
+    background-color: $dark-blue-intro-signup-bg;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: clamp(18.766px ,5vw, 33.366px) clamp(22.516px ,6vw, 40.033px);
+    &__logo {
+        width: 27%;
+        max-width: 160px;
+    }
+
+    &__nav  {
+        width: 50%;
+    }
+
+    &__nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav ul li {
+       font-size: clamp(12px ,3.2vw, 21px);
+       letter-spacing: .7px;
+       font-weight: 400;
+    }
+}

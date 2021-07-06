@@ -1,0 +1,30 @@
+.productive {
+    padding: 0 $mobile-section-padding-left-right;
+    margin-bottom: clamp(10.72rem, 40vw, 11.78rem);
+
+    &__image {
+        margin-bottom: clamp(3.48rem, 13vw, 6.196rem);
+    }
+
+    &>h1 {
+        font-size: $mobile-medium-heading-size;
+        margin-bottom: 1em;
+    }
+
+    &>p {
+        line-height: 1.63em;
+        margin-bottom: 1em;
+    }
+
+    &>a {
+        color: $cyan;
+        display: inline-block;
+        border-bottom: 1px solid $cyan;
+        &::after {
+            content: url(../../public/images/icon-arrow.svg);
+            position: relative;
+            margin-left: 0.5em;
+            vertical-align: middle;
+        }
+    }
+}

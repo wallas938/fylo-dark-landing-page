@@ -1,0 +1,50 @@
+.access {
+    padding: 12vw $mobile-section-padding-left-right;
+    background-color: $dark-blue-intro-signup-bg;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: clamp(5.629rem, 21vw, 10rem);
+
+    &>p {
+        margin-bottom: 1em;
+    }
+
+    &>p:first-child {
+        font-size: $mobile-medium-heading-size;
+        font-weight: 700;
+    }
+
+    &>p:nth-of-type(2) {
+        line-height: 1.63em;
+        font-weight: 400;
+        margin-bottom: 2.5em;
+    }
+
+    &>div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &>div input {
+        font-size: $mobile-text-size;
+        border: 0px solid transparent;
+        border-radius: 30px;
+        padding: 1.14em 1.08em;
+        margin-bottom: 1.89em;
+    }
+
+    &>div button {
+        font-size: $mobile-text-size;
+        border: 0px solid transparent;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, $cyan, 55%, $blue);
+        color: $white;
+        border-radius: 30px;
+        padding: 1.14em 1.08em;
+    }
+
+    &>div button:first-child {
+        
+    }
+}

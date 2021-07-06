@@ -1,0 +1,24 @@
+.features {
+    text-align: center;
+    padding: 0 $mobile-section-padding-left-right;
+    margin-bottom: clamp(10.72rem, 40vw, 11.78rem);
+    &>div {
+
+        & > .features__icon {
+            margin-bottom: clamp(2.14rem ,8vw, 2.38rem);
+        }
+
+        & > .features__icon img {
+            width: clamp(67.55px ,18vw, 120.117px);
+        }
+
+        & > h2 {
+            margin-bottom: clamp(0.80rem, 3vw, 1.428rem);
+        }
+
+        & > p {
+            line-height: 1.63em;
+            margin-bottom: 7.03em;
+        }
+    }
+}

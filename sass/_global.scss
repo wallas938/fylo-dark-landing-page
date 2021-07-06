@@ -1,0 +1,54 @@
+@import "typo";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: $font-size;
+}
+
+body {
+    color: $white;
+    font-family: $open-sans;
+    background-color: $dark-blue-main-bg;
+}
+
+h1 {
+    font-size: $mobile-big-heading-size;
+}
+
+h2 {
+    font-size: $mobile-medium-heading-size;
+}
+
+p {
+    font-size: $mobile-text-size;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input[type="button"],
+input[type="submit"],
+button {
+    cursor: pointer;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
