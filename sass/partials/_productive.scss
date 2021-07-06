@@ -4,6 +4,10 @@
 
     &__image {
         margin-bottom: clamp(3.48rem, 13vw, 6.196rem);
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
     }
 
     &>h1 {
@@ -20,6 +24,7 @@
         color: $cyan;
         display: inline-block;
         border-bottom: 1px solid $cyan;
+
         &::after {
             content: url(../../public/images/icon-arrow.svg);
             position: relative;

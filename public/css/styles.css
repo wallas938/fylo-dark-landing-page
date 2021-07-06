@@ -138,6 +138,7 @@ select:focus {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  display: none;
 }
 
 .hero__image, .hero__title, .hero__desc, .hero__cta {
@@ -147,6 +148,10 @@ select:focus {
 
 .hero__image {
   margin-bottom: clamp(2.278rem, 8.5vw, 2.28rem);
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 .hero__title {
@@ -203,6 +208,10 @@ select:focus {
 
 .productive__image {
   margin-bottom: clamp(3.48rem, 13vw, 6.196rem);
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 .productive > h1 {
