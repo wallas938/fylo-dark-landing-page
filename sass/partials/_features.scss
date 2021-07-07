@@ -22,3 +22,56 @@
         }
     }
 }
+
+@media screen and (min-width: $desktop-up) {
+    .features {
+        width: 60%;
+        display: grid;
+        padding: 0 0;
+        margin: 0 auto clamp(15.42rem, 15vw, 17rem) auto;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 15%;
+        grid-template-areas: 
+        "file-access    security"
+        "collaboration  storage";
+
+        &>div {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 0 clamp(2.057rem, 2vw, 2.2rem);
+            & > .features__icon {
+                margin-bottom: clamp(2.14rem ,8vw, 2.38rem);
+            }
+    
+            & > .features__icon img {
+                width: 5vw;
+                height: auto;
+                max-width: 75px;
+            }
+    
+            & > h2 {
+                margin-bottom: clamp(0.80rem, 3vw, 1.428rem);
+            }
+    
+            & > p {
+                line-height: 1.63em;
+                margin-bottom: 0em;
+            }
+        }
+
+        &>div:nth-of-type(1) {
+            grid-area: file-access;
+        }
+        &>div:nth-of-type(2) {
+            grid-area: security;
+        }
+        &>div:nth-of-type(3) {
+            grid-area: collaboration;
+        }
+        &>div:nth-of-type(4) {
+            grid-area: storage;
+        }
+    }
+}

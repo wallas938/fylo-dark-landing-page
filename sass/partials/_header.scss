@@ -24,3 +24,31 @@
        font-weight: 400;
     }
 }
+
+@media screen and (min-width: $desktop-up) {
+    .fylo-header {    
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: clamp(18.766px ,5vw, 33.366px) clamp(22.516px ,6vw, 40.033px);
+        &__logo {
+            width: 27%;
+        }
+    
+        &__nav  {
+            width: 25%;
+            max-width: 450px;
+        }
+    
+        &__nav ul {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    
+        &__nav ul li {
+           font-size: clamp(0.925rem, .9vw, 1.285rem);
+           letter-spacing: .055em;
+           font-weight: 400;
+        }
+    }
+}

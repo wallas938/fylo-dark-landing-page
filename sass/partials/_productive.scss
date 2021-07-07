@@ -10,17 +10,17 @@
         width: 80%;
     }
 
-    &>h1 {
+    &>div>h1 {
         font-size: $mobile-medium-heading-size;
         margin-bottom: 1em;
     }
 
-    &>p {
+    &>div>p {
         line-height: 1.63em;
         margin-bottom: 1em;
     }
 
-    &>a {
+    &>div>a {
         color: $cyan;
         display: inline-block;
         border-bottom: 1px solid $cyan;
@@ -30,6 +30,50 @@
             position: relative;
             margin-left: 0.5em;
             vertical-align: middle;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-up) {
+    .productive {
+        padding: 0 0;
+        margin: 0 auto clamp(8.228rem, 8vw, 10rem) auto;
+        display: flex;
+        align-items: center;
+        width: 85%;
+        &__image {
+            margin: 0 0 clamp(3.48rem, 13vw, 6.196rem) 0;
+            max-width: unset;
+            width: 52%;
+        }
+
+        &>div:last-child {
+            width: 36%;
+            margin-left: 7%;
+        }
+
+        &>div>h1 {
+            font-size: $desktop-big-heading-size;
+            margin-bottom: 1em;
+        }
+
+        &>div>p {
+            font-size: $desktop-text-size;
+            line-height: 1.63em;
+            margin-bottom: 1em;
+        }
+
+        &>div>a {
+            color: $cyan;
+            display: inline-block;
+            border-bottom: 2px solid $cyan;
+
+            &::after {
+                content: url(../../public/images/icon-arrow.svg);
+                position: relative;
+                margin-left: 0.5em;
+                vertical-align: middle;
+            }
         }
     }
 }

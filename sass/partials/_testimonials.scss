@@ -52,3 +52,64 @@
         transform: scale(.4);
     }
 }
+
+@media screen and (min-width: $desktop-up) {
+    .testimonials {
+        padding: 0 0;
+        margin: 0 auto clamp(10.72rem, 40vw, 11.78rem) auto;
+        width: 85%;
+        max-width: 1280px;
+        display: flex;
+        justify-content: space-between;
+
+        &__testimonial {
+            padding: clamp(2.057rem, 2vw, 3rem);
+            width: 31.2%;
+            margin: 0 0;
+            margin-bottom: clamp(2.14rem, 8vw, 3.81rem);
+
+            &>p {
+                font-size: $desktop-text-size;
+                line-height: 1.8em;
+                margin-bottom: 1.399em;
+            }
+
+            &>div {
+                display: flex;
+                align-items: center;
+            }
+
+            &>div img {
+                border-radius: 100%;
+                width: clamp(1.696rem, 1.65vw, 2.5rem);
+            }
+
+            &>div .testimonials__identity {
+                margin-left: clamp(.514rem, .5vw, 1rem);
+            }
+
+            &>div .testimonials__identity>p:first-child {
+                font-size: clamp(.667rem, .65vw, 1.28rem);
+                font-weight: 700;
+            }
+
+            &>div .testimonials__identity>p:last-child {
+                font-size: clamp(.492rem, .48vw, .954rem);
+            }
+        }
+
+        &__testimonial:first-child {
+            position: relative;
+            z-index: 10;
+        }
+
+        &__testimonial:first-child::before { // HERE
+            content: url(../images/bg-quotes.png);
+            position: absolute;
+            top: -2vw;
+            left: -1vw;
+            transform: scale(1);
+            z-index: -1;
+        }
+    }
+}

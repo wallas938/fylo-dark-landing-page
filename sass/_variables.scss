@@ -1,11 +1,11 @@
-@import "colors";
-
 /* Layout */
 $mobile-up: 375px;
 $desktop-up: 1440px;
 
 $mobile-down: 374px;
 $desktop-down: 1439px;
+
+/* Mobile */
 
 // Padding
 $mobile-section-padding-top-bottom:  clamp(18.766px ,5vw, 33.366px);
@@ -17,3 +17,14 @@ $mobile-medium-heading-size: clamp(1.259rem, 4.7vw, 1.857rem);
 
 // Paragraph
 $mobile-text-size: clamp(0.964rem, 3.7vw, 1.285rem);
+
+/* Desktop */
+$desktop-section-padding-top-bottom:  clamp(18.766px ,5vw, 33.366px);
+$desktop-section-padding-left-right:  clamp(31.9px ,8.5vw, 56.716px);
+
+// Headings
+$desktop-big-heading-size: clamp(2.571rem, 2.5vw, 3rem);
+$desktop-medium-heading-size: clamp(1.336rem, 1.3vw, 2rem);
+
+// Paragraph
+$desktop-text-size: clamp(1.028rem, 1vw, 1.571rem);

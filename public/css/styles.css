@@ -1,10 +1,12 @@
-/* Colors */
 /* Layout */
+/* Mobile */
+/* Desktop */
 /* Colors */
 /* FONTS */
 /* TYPO */
-/* Colors */
 /* Layout */
+/* Mobile */
+/* Desktop */
 @media screen and (max-width: 1439px) {
   .hide-for-mobile {
     display: none;
@@ -17,8 +19,6 @@
   }
 }
 
-/* FONTS */
-/* TYPO */
 * {
   margin: 0;
   padding: 0;
@@ -81,6 +81,24 @@ header, section, footer {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1440px) {
+  header, section, footer {
+    max-width: 1280px;
+    margin: unset;
+  }
+  h1 {
+    font-size: clamp(2.571rem, 2.5vw, 3rem);
+    font-family: "Raleway", sans-serif;
+  }
+  h2 {
+    font-size: clamp(1.336rem, 1.3vw, 2rem);
+    font-family: "Raleway", sans-serif;
+  }
+  p {
+    font-size: clamp(1.028rem, 1vw, 1.571rem);
+  }
+}
+
 .fylo-header {
   background-color: #1c2431;
   display: -webkit-box;
@@ -117,6 +135,41 @@ header, section, footer {
   font-size: clamp(12px, 3.2vw, 21px);
   letter-spacing: .7px;
   font-weight: 400;
+}
+
+@media screen and (min-width: 1440px) {
+  .fylo-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: clamp(18.766px, 5vw, 33.366px) clamp(22.516px, 6vw, 40.033px);
+  }
+  .fylo-header__logo {
+    width: 27%;
+  }
+  .fylo-header__nav {
+    width: 25%;
+    max-width: 450px;
+  }
+  .fylo-header__nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .fylo-header__nav ul li {
+    font-size: clamp(0.925rem, 0.9vw, 1.285rem);
+    letter-spacing: .055em;
+    font-weight: 400;
+  }
 }
 
 .hero {
@@ -186,6 +239,60 @@ header, section, footer {
   padding: 1.1em 6em;
 }
 
+@media screen and (min-width: 1440px) {
+  .hero {
+    padding: clamp(2.144rem, 8vw, 3.812rem) clamp(31.9px, 8.5vw, 56.716px) 10vw clamp(31.9px, 8.5vw, 56.716px);
+    width: 100%;
+    margin-bottom: unset;
+  }
+  .hero::before {
+    content: url(../images/bg-curvy-desktop.svg);
+    position: absolute;
+    bottom: -5px;
+    z-index: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: unset;
+    width: 100%;
+  }
+  .hero__bg-curvy {
+    display: none;
+  }
+  .hero__image, .hero__title, .hero__desc, .hero__cta {
+    position: relative;
+    z-index: 1;
+  }
+  .hero__image {
+    margin-bottom: clamp(2.278rem, 8.5vw, 2.28rem);
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero__title {
+    width: 50%;
+    margin: 0 auto .78em auto;
+    line-height: 1.6em;
+  }
+  .hero__desc {
+    font-size: clamp(0.964rem, 3.7vw, 1.285rem);
+    width: 40%;
+    line-height: 1.6em;
+    margin: 0 auto 1.8em auto;
+  }
+  .hero__cta button {
+    font-weight: 700;
+    border-radius: 30px;
+    font-family: "Raleway", sans-serif;
+    font-size: clamp(0.964rem, 3.7vw, 1.285rem);
+    border: 1px solid transparent;
+    color: white;
+    background: #020024;
+    background: linear-gradient(50deg, #65e2d9, #339ecc);
+    padding: 1.1em 6em;
+  }
+}
+
 .features {
   text-align: center;
   padding: 0 clamp(31.9px, 8.5vw, 56.716px);
@@ -209,6 +316,70 @@ header, section, footer {
   margin-bottom: 7.03em;
 }
 
+@media screen and (min-width: 1440px) {
+  .features {
+    width: 60%;
+    display: -ms-grid;
+    display: grid;
+    padding: 0 0;
+    margin: 0 auto clamp(15.42rem, 15vw, 17rem) auto;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 15%;
+        grid-template-areas: "file-access    security" "collaboration  storage";
+  }
+  .features > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 0 clamp(2.057rem, 2vw, 2.2rem);
+  }
+  .features > div > .features__icon {
+    margin-bottom: clamp(2.14rem, 8vw, 2.38rem);
+  }
+  .features > div > .features__icon img {
+    width: 5vw;
+    height: auto;
+    max-width: 75px;
+  }
+  .features > div > h2 {
+    margin-bottom: clamp(0.8rem, 3vw, 1.428rem);
+  }
+  .features > div > p {
+    line-height: 1.63em;
+    margin-bottom: 0em;
+  }
+  .features > div:nth-of-type(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: file-access;
+  }
+  .features > div:nth-of-type(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: security;
+  }
+  .features > div:nth-of-type(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: collaboration;
+  }
+  .features > div:nth-of-type(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: storage;
+  }
+}
+
 .productive {
   padding: 0 clamp(31.9px, 8.5vw, 56.716px);
   margin-bottom: clamp(10.72rem, 40vw, 11.78rem);
@@ -222,27 +393,70 @@ header, section, footer {
   width: 80%;
 }
 
-.productive > h1 {
+.productive > div > h1 {
   font-size: clamp(1.259rem, 4.7vw, 1.857rem);
   margin-bottom: 1em;
 }
 
-.productive > p {
+.productive > div > p {
   line-height: 1.63em;
   margin-bottom: 1em;
 }
 
-.productive > a {
+.productive > div > a {
   color: #65e2d9;
   display: inline-block;
   border-bottom: 1px solid #65e2d9;
 }
 
-.productive > a::after {
+.productive > div > a::after {
   content: url(../../public/images/icon-arrow.svg);
   position: relative;
   margin-left: 0.5em;
   vertical-align: middle;
+}
+
+@media screen and (min-width: 1440px) {
+  .productive {
+    padding: 0 0;
+    margin: 0 auto clamp(8.228rem, 8vw, 10rem) auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 85%;
+  }
+  .productive__image {
+    margin: 0 0 clamp(3.48rem, 13vw, 6.196rem) 0;
+    max-width: unset;
+    width: 52%;
+  }
+  .productive > div:last-child {
+    width: 36%;
+    margin-left: 7%;
+  }
+  .productive > div > h1 {
+    font-size: clamp(2.571rem, 2.5vw, 3rem);
+    margin-bottom: 1em;
+  }
+  .productive > div > p {
+    font-size: clamp(1.028rem, 1vw, 1.571rem);
+    line-height: 1.63em;
+    margin-bottom: 1em;
+  }
+  .productive > div > a {
+    color: #65e2d9;
+    display: inline-block;
+    border-bottom: 2px solid #65e2d9;
+  }
+  .productive > div > a::after {
+    content: url(../../public/images/icon-arrow.svg);
+    position: relative;
+    margin-left: 0.5em;
+    vertical-align: middle;
+  }
 }
 
 .testimonials {
@@ -303,6 +517,67 @@ header, section, footer {
   left: -3vw;
   -webkit-transform: scale(0.4);
           transform: scale(0.4);
+}
+
+@media screen and (min-width: 1440px) {
+  .testimonials {
+    padding: 0 0;
+    margin: 0 auto clamp(10.72rem, 40vw, 11.78rem) auto;
+    width: 85%;
+    max-width: 1280px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .testimonials__testimonial {
+    padding: clamp(2.057rem, 2vw, 3rem);
+    width: 31.2%;
+    margin: 0 0;
+    margin-bottom: clamp(2.14rem, 8vw, 3.81rem);
+  }
+  .testimonials__testimonial > p {
+    font-size: clamp(1.028rem, 1vw, 1.571rem);
+    line-height: 1.8em;
+    margin-bottom: 1.399em;
+  }
+  .testimonials__testimonial > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .testimonials__testimonial > div img {
+    border-radius: 100%;
+    width: clamp(1.696rem, 1.65vw, 2.5rem);
+  }
+  .testimonials__testimonial > div .testimonials__identity {
+    margin-left: clamp(0.514rem, 0.5vw, 1rem);
+  }
+  .testimonials__testimonial > div .testimonials__identity > p:first-child {
+    font-size: clamp(0.667rem, 0.65vw, 1.28rem);
+    font-weight: 700;
+  }
+  .testimonials__testimonial > div .testimonials__identity > p:last-child {
+    font-size: clamp(0.492rem, 0.48vw, 0.954rem);
+  }
+  .testimonials__testimonial:first-child {
+    position: relative;
+    z-index: 10;
+  }
+  .testimonials__testimonial:first-child::before {
+    content: url(../images/bg-quotes.png);
+    position: absolute;
+    top: -2vw;
+    left: -1vw;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    z-index: -1;
+  }
 }
 
 .access {
