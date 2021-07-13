@@ -3,6 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
     padding: clamp(18.766px ,5vw, 33.366px) clamp(22.516px ,6vw, 40.033px);
     &__logo {
         width: 27%;
@@ -30,6 +32,10 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        width: 100%;
+        max-width: none;
+        margin-left: unset;
+        margin-right: unset;
         padding: clamp(18.766px ,5vw, 33.366px) clamp(22.516px ,6vw, 40.033px);
         &__logo {
             width: 27%;

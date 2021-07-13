@@ -110,6 +110,8 @@ header, section, footer {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
   padding: clamp(18.766px, 5vw, 33.366px) clamp(22.516px, 6vw, 40.033px);
 }
 
@@ -148,6 +150,10 @@ header, section, footer {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    width: 100%;
+    max-width: none;
+    margin-left: unset;
+    margin-right: unset;
     padding: clamp(18.766px, 5vw, 33.366px) clamp(22.516px, 6vw, 40.033px);
   }
   .fylo-header__logo {
@@ -178,6 +184,8 @@ header, section, footer {
   padding: clamp(2.144rem, 8vw, 3.812rem) clamp(31.9px, 8.5vw, 56.716px);
   text-align: center;
   margin-bottom: 7.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero__bg-curvy {
@@ -243,6 +251,9 @@ header, section, footer {
   .hero {
     padding: clamp(2.144rem, 8vw, 3.812rem) clamp(31.9px, 8.5vw, 56.716px) 10vw clamp(31.9px, 8.5vw, 56.716px);
     width: 100%;
+    max-width: none;
+    margin-left: unset;
+    margin-right: unset;
     margin-bottom: unset;
   }
   .hero::before {
@@ -270,13 +281,13 @@ header, section, footer {
     margin-right: auto;
   }
   .hero__title {
-    width: 50%;
+    width: 55%;
     margin: 0 auto .78em auto;
     line-height: 1.6em;
   }
   .hero__desc {
     font-size: clamp(0.964rem, 3.7vw, 1.285rem);
-    width: 40%;
+    width: 48%;
     line-height: 1.6em;
     margin: 0 auto 1.8em auto;
   }
@@ -522,9 +533,8 @@ header, section, footer {
 @media screen and (min-width: 1440px) {
   .testimonials {
     padding: 0 0;
-    margin: 0 auto clamp(10.72rem, 40vw, 11.78rem) auto;
+    margin: 0 auto clamp(3.08rem, 3vw, 5rem) auto;
     width: 85%;
-    max-width: 1280px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -586,6 +596,7 @@ header, section, footer {
   width: 90%;
   margin: 0 auto;
   text-align: center;
+  border-radius: 5px;
   margin-bottom: clamp(5.629rem, 21vw, 10rem);
 }
 
@@ -632,6 +643,72 @@ header, section, footer {
   color: white;
   border-radius: 30px;
   padding: 1.14em 1.08em;
+}
+
+@media screen and (min-width: 1440px) {
+  .access {
+    left: 50%;
+    top: 10vw;
+    width: 65%;
+    border-radius: 5px;
+    margin: unset;
+    position: relative;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    padding: 3.5vw 0 3vw 0;
+    background-color: #1c2431;
+  }
+  .access > p {
+    margin-bottom: 1em;
+  }
+  .access > p:first-child {
+    font-size: clamp(2.571rem, 2.5vw, 2.714rem);
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+  }
+  .access > p:nth-of-type(2) {
+    line-height: 1.63em;
+    font-weight: 400;
+    margin-bottom: 2.5em;
+    padding: 0 8vw;
+  }
+  .access > div.access__cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 6.5vw;
+  }
+  .access > div input {
+    font-size: clamp(1.028rem, 1vw, 1.571rem);
+    border: 0px solid transparent;
+    border-radius: 30px;
+    padding: 1.14em 1.08em;
+    margin-bottom: 0;
+    -ms-flex-preferred-size: 69%;
+        flex-basis: 69%;
+  }
+  .access > div button {
+    font-size: clamp(1.028rem, 1vw, 1.571rem);
+    border: 0px solid transparent;
+    background: #020024;
+    background: -webkit-gradient(linear, left top, right top, from(#65e2d9), color-stop(55%), to(#339ecc));
+    background: linear-gradient(90deg, #65e2d9, 55%, #339ecc);
+    color: white;
+    border-radius: 30px;
+    padding: 1.2em 1.1em;
+    -ms-flex-preferred-size: 27%;
+        flex-basis: 27%;
+  }
 }
 
 .footer {
@@ -759,5 +836,123 @@ header, section, footer {
   margin: 0 .4em;
   border-radius: 100%;
   border: 1px solid white;
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    width: 100%;
+    max-width: none;
+    margin: unset;
+    border-radius: 5px;
+    background-color: #0b1523;
+    padding: clamp(16.42rem, 16vw, 18rem) 0 0 0;
+  }
+  .footer__logo {
+    padding: 0vw clamp(31.9px, 8.5vw, 56.716px);
+    margin-bottom: clamp(2.68rem, 10vw, 4.76rem);
+    width: 65%;
+  }
+  .footer__grid {
+    padding: 0 5vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr .7fr .3fr .3fr .4fr;
+        grid-template-columns: 1fr .7fr .3fr .3fr .4fr;
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
+        grid-template-areas: "location   phone    about    contact  social";
+  }
+  .footer__location, .footer__phone {
+    margin-bottom: clamp(1.34rem, 5vw, 2.38rem);
+  }
+  .footer__location {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: location;
+  }
+  .footer__location p {
+    position: relative;
+    font-size: clamp(1.125rem, 4.2vw, 1.429rem);
+    margin-left: 2.5em;
+  }
+  .footer__location p::before {
+    position: absolute;
+    content: url(../../public/images/icon-location.svg);
+    top: 6px;
+    left: -40px;
+  }
+  .footer__phone {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: phone;
+  }
+  .footer__phone p {
+    position: relative;
+    font-size: clamp(1.028rem, 1vw, 1.571rem);
+    margin-left: 2.5em;
+  }
+  .footer__phone p::before {
+    position: absolute;
+    content: url(../../public/images/icon-phone.svg);
+    top: 6px;
+    left: -40px;
+  }
+  .footer__email {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: email;
+    margin-bottom: clamp(6.43rem, 24vw, 6.78rem);
+  }
+  .footer__email p {
+    position: relative;
+    font-size: clamp(1.028rem, 1vw, 1.571rem);
+    margin-left: 2.5em;
+  }
+  .footer__email p::before {
+    position: absolute;
+    content: url(../../public/images/icon-email.svg);
+    top: 6px;
+    left: -40px;
+  }
+  .footer__about p, .footer__contact p {
+    margin-bottom: clamp(1.34rem, 5vw, 2.38rem);
+  }
+  .footer__about {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: about;
+    margin-bottom: clamp(2.41rem, 9vw, 4.28rem);
+  }
+  .footer__contact {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    grid-area: contact;
+    margin-bottom: clamp(6.43rem, 24vw, 6.78rem);
+  }
+  .footer__social-media {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    grid-area: social;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .footer__social-media i {
+    /* margin: 0 1em;
+                padding: 1rem; */
+    font-size: .9vw;
+    padding: .7em .9em;
+    margin: 0 .4em;
+    border-radius: 100%;
+    border: 1px solid white;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

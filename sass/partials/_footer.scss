@@ -112,3 +112,118 @@
         }
     }
 }
+
+@media screen and (min-width: $desktop-up) {
+    .footer {
+        width: 100%;
+        max-width: none;
+        margin: unset;
+        border-radius: 5px;
+        background-color: $dark-blue-footer-bg;
+        padding: clamp(16.42rem, 16vw, 18rem) 0 0 0;
+    
+        &__logo {
+            padding: 0vw $mobile-section-padding-left-right;
+            margin-bottom: clamp(2.68rem , 10vw, 4.76rem);
+            width: 65%;
+        }
+    
+        &__grid {
+            padding: 0 5vw;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr .7fr .3fr .3fr .4fr;
+            column-gap: 3rem;
+            grid-template-areas:
+                "location   phone    about    contact  social";
+        }
+    
+        &__location,
+        &__phone {
+            margin-bottom: clamp(1.34rem, 5vw, 2.38rem);
+        }
+    
+        &__location {
+            grid-area: location;
+    
+            p {
+                position: relative;
+                font-size: clamp(1.125rem, 4.2vw, 1.429rem);
+                margin-left: 2.5em;
+            }
+    
+            p::before {
+                position: absolute;
+                content: url(../../public/images/icon-location.svg);
+                top: 6px;
+                left: -40px;
+            }
+        }
+    
+        &__phone {
+            grid-area: phone;
+    
+            p {
+                position: relative;
+                font-size: $desktop-text-size;
+                margin-left: 2.5em;
+            }
+    
+            p::before {
+                position: absolute;
+                content: url(../../public/images/icon-phone.svg);
+                top: 6px;
+                left: -40px;
+            }
+        }
+    
+        &__email {
+            grid-area: email;
+            margin-bottom: clamp(6.43rem, 24vw, 6.78rem);
+    
+            p {
+                position: relative;
+                font-size: $desktop-text-size;
+                margin-left: 2.5em;
+            }
+    
+            p::before {
+                position: absolute;
+                content: url(../../public/images/icon-email.svg);
+                top: 6px;
+                left: -40px;
+            }
+        }
+    
+        &__about p, &__contact p{
+            margin-bottom: clamp(1.34rem, 5vw, 2.38rem);
+        }
+    
+        &__about {
+            grid-area: about;
+            margin-bottom: clamp(2.41rem, 9vw, 4.28rem);
+        }
+    
+        &__contact {
+            grid-area: contact;
+            margin-bottom: clamp(6.43rem, 24vw, 6.78rem);
+        }
+    
+        &__social-media {
+            grid-area: social;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+    
+            i {
+                /* margin: 0 1em;
+                padding: 1rem; */
+                font-size: .9vw;
+                padding: .7em .9em;
+                margin: 0 .4em;
+                border-radius: 100%;
+                border: 1px solid $white;
+            }
+        }
+    }
+}

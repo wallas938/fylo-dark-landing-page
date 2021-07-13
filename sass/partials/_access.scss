@@ -4,6 +4,7 @@
     width: 90%;
     margin: 0 auto;
     text-align: center;
+    border-radius: 5px;
     margin-bottom: clamp(5.629rem, 21vw, 10rem);
 
     &>p {
@@ -43,5 +44,64 @@
         color: $white;
         border-radius: 30px;
         padding: 1.14em 1.08em;
+    }
+}
+
+@media screen and (min-width: $desktop-up) {
+    .access {
+        left: 50%;
+        top: 10vw;
+        width: 65%;
+        border-radius: 5px;
+        margin: unset;
+        position: relative;
+        transform: translateX(-50%);
+        padding: 3.5vw 0 3vw 0;
+        background-color: $dark-blue-intro-signup-bg;
+
+        &>p {
+            margin-bottom: 1em;
+        }
+    
+        &>p:first-child {
+            font-size: clamp(2.571rem, 2.5vw, 2.714rem);
+            font-family: $raleway;
+            font-weight: 700;
+        }
+    
+        &>p:nth-of-type(2) {
+            line-height: 1.63em;
+            font-weight: 400;
+            margin-bottom: 2.5em;
+            padding: 0 8vw;
+        }
+    
+        &>div.access__cta {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 0 6.5vw;
+        }
+    
+        &>div input {
+            font-size: $desktop-text-size;
+            border: 0px solid transparent;
+            border-radius: 30px;
+            padding: 1.14em 1.08em;
+            margin-bottom: 0;
+            flex-basis: 69%;
+        }
+    
+        &>div button {
+            font-size: $desktop-text-size;
+            border: 0px solid transparent;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, $cyan, 55%, $blue);
+            color: $white;
+            border-radius: 30px;
+            padding: 1.2em 1.1em;
+            flex-basis: 27%;
+        }
     }
 }

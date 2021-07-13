@@ -56,9 +56,8 @@
 @media screen and (min-width: $desktop-up) {
     .testimonials {
         padding: 0 0;
-        margin: 0 auto clamp(10.72rem, 40vw, 11.78rem) auto;
+        margin: 0 auto clamp(3.08rem, 3vw, 5rem) auto;
         width: 85%;
-        max-width: 1280px;
         display: flex;
         justify-content: space-between;
 
